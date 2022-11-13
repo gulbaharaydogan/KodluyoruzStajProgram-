@@ -1,0 +1,31 @@
+package cse;
+
+import java.util.*;
+
+public class kod {
+	public static void main(String[] args) {
+		
+		// kullanıcıdan Scanner al ve değişken oluştur
+		
+		Scanner scan = new Scanner(System.in);
+		double açılış, kmBaşına, gidilenYol, tutar, minTutar;
+		
+		açılış = 10.0;
+		kmBaşına = 2.20;
+		minTutar = 20.0;
+		System.out.println("Gidilen yolu km cinsinden giriniz");
+		gidilenYol = scan.nextDouble();
+		
+		tutar = açılış +(gidilenYol * kmBaşına);
+	
+		boolean kontrol = (tutar <20)? true : false;
+		if(kontrol) {
+			System.out.println("ödenecek ücret 20 tl");
+		}
+		else {
+			System.out.println("Ödenecek ücret " + tutar);
+		}
+		
+		
+	}
+}
