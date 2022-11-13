@@ -1,0 +1,43 @@
+package cse;
+
+import java.util.*;
+
+public class kod {
+	public static void main(String[] args) {
+		
+		// kullanıcıdan Scanner al ve değişken oluştur
+		
+		Scanner scan = new Scanner(System.in);
+		double elma, armut, domates, muz, patlıcan;
+		double elmaA, armutA, domatesA, muzA, patlıcanA;
+		
+		System.out.println("elmadan kaç kilogram aldığınızı giriniz ");
+	    elmaA = scan.nextDouble();
+	    elma = elmaA * 3.67;
+	    
+	    System.out.println("armuttan kaç kilogram aldığınızı giriniz ");
+	    armutA = scan.nextDouble();
+	    armut = armutA * 2.14;
+	    
+	    System.out.println("domatesten kaç kilogram aldığınızı giriniz ");
+	    domatesA = scan.nextDouble();
+	    domates = domatesA * 1.11;
+	    
+	    System.out.println("muzdan kaç kilogram aldığınızı giriniz ");
+	    muzA = scan.nextDouble();
+	    muz = muzA * 0.95;
+	    
+	    System.out.println("patlıcandan kaç kilogram aldığınızı giriniz ");
+	    patlıcanA = scan.nextDouble();
+		patlıcan = patlıcanA * 5.0;
+		
+		double toplamTutar = elma + armut + domates + muz + patlıcan;
+		
+		System.out.println("elma kaç kilo? " + elmaA);
+		System.out.println("armut kaç kilo? " + armutA);
+		System.out.println("domates kaç kilo? " + domatesA);
+		System.out.println("muz kaç kilo? " + muzA);
+		System.out.println("patlıcan kaç kilo? " + patlıcanA);
+		System.out.println("toplam tutar " + toplamTutar + " TL");
+	}
+}
