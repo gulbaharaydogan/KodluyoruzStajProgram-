@@ -1,0 +1,30 @@
+import java.util.*;
+
+			public class Test {
+				public static void main(String[] args) {
+					
+					// kullanıcıdan Scanner al ve değişken oluştur
+					
+					Scanner scan = new Scanner(System.in);
+					double ürünFiyatı, kdvOranı1, kdvOranı2, kdvFiyat;
+					kdvOranı1 = 0.18;
+					kdvOranı2 = 0.08;
+					
+					System.out.println("Ürün fiyatını giriniz");
+					ürünFiyatı = scan.nextDouble();
+					
+					boolean kontrol = (ürünFiyatı>1000)? true : false;
+					if(kontrol) {
+						kdvFiyat = ürünFiyatı * kdvOranı2;
+					}
+					else {
+						kdvFiyat = ürünFiyatı * kdvOranı1;
+					}
+					
+					ürünFiyatı += kdvFiyat;
+					
+					System.out.println("KDV miktarı "+ kdvFiyat);
+					System.out.println("ürünün KDV'li fiyatı "+ ürünFiyatı);
+					
+					
+				}}
