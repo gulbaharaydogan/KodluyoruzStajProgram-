@@ -1,0 +1,25 @@
+package cse;
+
+import java.util.*;
+
+public class kod {
+	public static void main(String[] args) {
+		
+		// kullanıcıdan Scanner al ve değişken oluştur
+		
+		Scanner scan = new Scanner(System.in);
+		double sonuç;
+		
+		System.out.println("lütfen kilonuzu kilogram cinsinden giriniz ");
+		double kilo = scan.nextDouble();
+		
+		System.out.println("lütfen boyunuzu metre cinsinden giriniz ");
+		double boy = scan.nextDouble();
+		
+		//formül : Kilo (kg) / Boy(m) * Boy(m)
+		
+		sonuç = kilo /( boy * boy);
+		
+		System.out.println("vücut kitle endeksiniz "+ sonuç);
+	}
+}
