@@ -1,0 +1,26 @@
+package cse;
+
+import java.util.*;
+
+public class kod {
+	public static void main(String[] args) {
+		
+		// kullanıcıdan Scanner al ve değişken oluştur
+		
+		Scanner scan = new Scanner(System.in);
+		double yarıçap, pi, açı, alan;
+		
+		System.out.println("Dairenin yarıçapını giriniz");
+		yarıçap = scan.nextDouble();
+		
+		System.out.println("Dairenin açısını giriniz");
+		açı = scan.nextDouble();
+		
+		pi = 3.14;
+		
+		//Formül : (pi * (r*r) * açı) / 360
+        alan = (pi * (yarıçap*yarıçap) * açı) / 360;
+        System.out.println("girdiğiniz daire parçasının alanı " + alan);
+		
+	}
+}
