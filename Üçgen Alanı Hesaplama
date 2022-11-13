@@ -1,0 +1,27 @@
+package cse;
+
+import java.util.*;
+import java.lang.Math;
+public class kod {
+	public static void main(String[] args) {
+		
+		// kullanıcıdan Scanner al ve değişken oluştur
+		
+		Scanner scan = new Scanner(System.in);
+		double kenar1, kenar2, kenar3, alan, çevre;
+		System.out.println("Birinci kenarın uzunluğunu giriniz ");
+		kenar1 = scan.nextDouble();
+		System.out.println("İkinci kenarın uzunluğunu giriniz ");
+		kenar2 = scan.nextDouble();
+		System.out.println("Üçüncü kenarın uzunluğunu giriniz ");
+		kenar3 = scan.nextDouble();
+		
+		çevre = (kenar1 + kenar2 + kenar3) / 2;
+		alan = Math.sqrt(çevre*(çevre- kenar1)*(çevre-kenar2)*(çevre-kenar3));
+		
+		System.out.println("Girdiğiniz üçgenin alanı " + alan);
+		
+		
+		
+	}
+}
