@@ -1,0 +1,60 @@
+
+import java.util.*;
+
+public class kod {
+	public static void main(String[] args) {
+		
+		String username, password;
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("enter your username");
+		username = scan.nextLine();
+
+		if(username.equals("patika") ) {
+			System.out.println("correct, you log in!");
+		}
+		else {
+			System.out.println("you entered incorrect "
+					+ "\nDo you want to reset your username \nyes or no");
+			
+			String ans = scan.nextLine();
+			switch(ans) {
+			case "yes" : System.out.println("enter a new username"); 
+			String nusername = scan.nextLine();
+			
+			if(nusername.equals(username)) {
+			System.out.println("Could not create user name, please enter another name");
+			nusername = scan.nextLine();}
+			else {System.out.println("user name created");}
+			
+			break;
+			case "no" : System.out.println("please try again to log in"); 
+			username = scan.nextLine(); break;
+			}}
+		
+		System.out.println("enter your password");
+		password = scan.nextLine();
+		
+		if(password.equals("java123") ) {
+			System.out.println("correct, you log in!");
+		}
+		else {
+			System.out.println("you entered incorrect "
+		+ "\nDo you want to reset your username \nyes or no");
+			
+		String ans2 = scan.nextLine();
+		switch(ans2) {
+		case "yes" : System.out.println("enter a new password"); 
+		String npassword = scan.nextLine();
+		
+		if(npassword.equals(username)) {
+		System.out.println("Could not create password, please enter another password");
+		npassword = scan.nextLine();}
+		else {System.out.println("Password created");}
+		
+		break;
+		case "no" : System.out.println("please try again to log in"); 
+		password = scan.nextLine(); break;
+		}}
+		
+	}}
