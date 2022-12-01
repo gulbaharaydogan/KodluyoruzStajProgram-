@@ -1,0 +1,66 @@
+
+import java.util.*;
+
+public class kod {
+	public static void main(String[] args) {
+		
+		int gün;
+		String ay;
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("doğum ayınızı giriniz");
+		ay = scan.nextLine();
+		
+		System.out.println("doğum gününu giriniz");
+		gün = scan.nextInt();
+		
+		if(ay.equals("ocak")) {
+			if(gün <= 21) { 
+				System.out.println("oğlak");}
+			else System.out.println("kova");
+			}	
+		if(ay.equals("şubat")) {
+			if(gün <= 19) { System.out.println("kova");}
+			else System.out.println("balık");
+			}	
+		if(ay.equals("mart")) {
+			if(gün <= 20) { System.out.println("balık");}
+			else System.out.println("koç");
+			}	
+		if(ay.equals("nisan")) {
+			if(gün <= 20) { System.out.println("koç");}
+			else System.out.println("boğa");
+			}	
+		if(ay.equals("mayıs")) {
+			if(gün <= 21) { System.out.println("boğa");}
+			else System.out.println("ikizler");
+			}	
+		if(ay.equals("haziran")) {
+			if(gün <= 22) { System.out.println("ikizler");}
+			else System.out.println("yengeç");
+			}	
+		if(ay.equals("temmuz")) {
+			if(gün <= 22) { System.out.println("yengeç");}
+			else System.out.println("aslan");
+			}	
+		if(ay.equals("ağustos")) {
+			if(gün <= 22) { System.out.println("aslan");}
+			else System.out.println("başak");
+			}	
+		if(ay.equals("eylül")) {
+			if(gün <= 22) { System.out.println("başak");}
+			else System.out.println("terazi");
+			}	
+		if(ay.equals("ekim")) {
+			if(gün <= 22) { System.out.println("terazi");}
+			else System.out.println("akrep");
+			}
+		if(ay.equals("kasım")) {
+			if(gün <= 21) { System.out.println("akrep");}
+			else System.out.println("yay");
+			}	
+		if(ay.equals("aralık")) {
+			if(gün <= 21) { System.out.println("yay");}
+			else System.out.println("oğlak");
+			}	
+	}}
