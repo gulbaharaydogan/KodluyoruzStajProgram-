@@ -1,0 +1,50 @@
+import java.util.*;
+
+public class kod {
+	public static void main(String[] args) {
+		
+		int mat, fiz, türk, kim, mu;
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("matematik notunuz: ");
+		mat = scan.nextInt();
+		System.out.println("fizik notunuz: ");
+		fiz = scan.nextInt();
+		System.out.println("türkçe notunuz: ");
+		türk = scan.nextInt();
+		System.out.println("kimya notunuz: ");
+		kim = scan.nextInt();
+		System.out.println("müzik notunuz: ");
+		mu = scan.nextInt();
+		
+		double ortalama;
+		
+		if(mat > 100 || mat < 0) {
+		 mat = 0;
+		} 
+		if(fiz > 100 || fiz < 0) {
+			 fiz = 0;
+			} 
+		if(türk > 100 || türk < 0) {
+			 türk = 0;
+			} 
+		if(kim > 100 || kim < 0) {
+			 kim = 0;
+			} 
+		if(mu > 100 || mu < 0) {
+			 mu = 0;
+			} 
+		
+		ortalama = (mat + fiz + türk + kim + mu)/5;
+		
+		
+		if(ortalama >= 55) {
+			System.out.println("ortalamanız " + ortalama);
+			System.out.println("sınıfı geçtiniz");
+		}
+		else {
+			System.out.println("ortalamanız " + ortalama);
+			System.out.println("sınıfı geçemediniz");
+		}
+	
+	}}
