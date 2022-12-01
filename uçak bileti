@@ -1,0 +1,50 @@
+
+import java.util.*;
+
+public class kod {
+	public static void main(String[] args) {
+		
+		double km, ücret, baş, indirim;
+		int yaş, tip;
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("uçuş verilerinizi giriniz: \nmesafeyi km cinsinden giriniz");
+		km = scan.nextDouble();
+		System.out.println("yaşınızı giriniz");
+		yaş = scan.nextInt();
+		System.out.println("uçuş tipinizi belirleyeniz: \ntek yön için 1 \ngidiş-dönüş için 2 yazınız");
+		tip = scan.nextInt();
+		
+	    
+	    if(yaş < 0 || yaş > 150) {
+	    	System.out.println("hatalı giriş yaptınız");
+	    	System.exit(0);
+	    	}
+	    if(km < 0) {
+	    	System.out.println("hatalı giriş yaptınız");
+	    	System.exit(0);
+	    }
+	    if(tip < 1 || tip > 2) {
+	    	System.out.println("hatalı giriş yaptınız");
+	    	System.exit(0);
+	    	}
+	    baş = 0.1;
+	    ücret = baş * km;
+	    
+	    if(yaş <= 12) {
+	    	ücret = ücret * 0.5;
+	    }
+	    if(yaş > 12 && yaş <= 24) {
+	    	ücret = ücret - (ücret*0.1);
+	    }
+	    if(yaş > 65) {
+	    	ücret = ücret - (ücret*0.3);
+	    }
+	    
+	    if(tip == 2) {
+	    	ücret = (ücret - (ücret*0.2))*2;
+	  
+	    }
+		
+	    System.out.println("toplam tutar: " + ücret);
+	}}
