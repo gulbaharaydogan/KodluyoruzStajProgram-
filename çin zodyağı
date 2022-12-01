@@ -1,0 +1,53 @@
+
+import java.util.*;
+
+public class kod {
+	public static void main(String[] args) {
+		
+		int yıl;
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("yıl giriniz");
+		yıl = scan.nextInt();
+		
+		if(yıl % 12 == 0) {
+			System.out.println("Çin Zodyağı Burcunuz : maymun");
+		}
+		if(yıl % 12 == 1) {
+			System.out.println("Çin Zodyağı Burcunuz : horoz");
+		}
+		if(yıl % 12 == 2) {
+			System.out.println("Çin Zodyağı Burcunuz : köpek");
+		}
+		if(yıl % 12 == 3) {
+			System.out.println("Çin Zodyağı Burcunuz : domuz");
+		}
+		if(yıl % 12 == 4) {
+			System.out.println("Çin Zodyağı Burcunuz : fare");
+		}
+		if(yıl % 12 == 5) {
+			System.out.println("Çin Zodyağı Burcunuz : öküz");
+		}
+		if(yıl % 12 == 6) {
+			System.out.println("Çin Zodyağı Burcunuz : kaplan");
+		}
+		if(yıl % 12 == 7) {
+			System.out.println("Çin Zodyağı Burcunuz : tavşan");
+		}
+		if(yıl % 12 == 8) {
+			System.out.println("Çin Zodyağı Burcunuz : ejdarha");
+		}
+		if(yıl % 12 == 9) {
+			System.out.println("Çin Zodyağı Burcunuz : yılan");
+		}
+		if(yıl % 12 == 10) {
+			System.out.println("Çin Zodyağı Burcunuz : at");
+		}
+		if(yıl % 12 == 11) {
+			System.out.println("Çin Zodyağı Burcunuz : koyun");
+		}
+		
+		       
+		
+		
+	}}
