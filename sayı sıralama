@@ -1,0 +1,43 @@
+
+import java.util.*;
+
+public class kod {
+	public static void main(String[] args) {
+		
+		int s1, s2, s3;
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("ilk sayıyı giriniz");
+		s1 = scan.nextInt();
+		System.out.println("ikinci sayıyı giriniz");
+		s2 = scan.nextInt();
+		System.out.println("üçüncü sayıyı giriniz");
+		s3 = scan.nextInt();
+		
+		if(s1 < s2 && s1 < s3) {
+		 System.out.println(s1);
+		 
+		       if(s2 < s3) {
+			 System.out.println(s2 + "\n" + s3);
+			} 
+		       else {
+			System.out.println(s3 + "\n" + s2);
+		}}
+		else if( s1 > s2 && s1 > s3) {
+			   if(s2 < s3) {
+				 System.out.println(s2 + "\n" + s3 + "\n" +s1);
+				} 
+			    else {
+				System.out.println(s3 + "\n" + s2 + "\n" +s1);
+			}} 
+		else if (s1 > s2 && s1 < s3) {
+			 if(s2 < s3) {
+				 System.out.println(s2 + "\n" + s1 + "\n" +s3);
+				}}
+		else if (s1 < s2 && s1 > s3) {
+			 if(s2 > s3) {
+				 System.out.println(s3 + "\n" + s1 + "\n" +s2);
+				}}
+		
+		
+	}}
