@@ -1,0 +1,24 @@
+import java.util.*;
+
+public class kod {
+	public static void main(String[] args) {
+		int n1, n2, select;
+		//String select = "";
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.println("ilk sayıyı girin");
+		n1 = scan.nextInt();
+		System.out.println("ikinci sayıyı giriniz");
+		n2 = scan.nextInt();
+		
+		System.out.println("toplama için 1 \nçıkarma için 2 \nçarpma için 3 \nbölme için 4");
+		select = scan.nextInt();
+		
+		switch(select) {
+		case 1 : System.out.println("toplama: " + (n1+n2)); break;
+		case 2 : System.out.println("çıkarma: " + (n1-n2)); break;
+		case 3 : System.out.println("çarpma: " + (n1*n2)); break;
+		case 4 : System.out.println("bölme: " + (n1/n2)); break;
+		}
+	}
+}
