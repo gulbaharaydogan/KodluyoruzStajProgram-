@@ -1,0 +1,25 @@
+import java.util.*;
+
+public class kod {
+	public static void main(String[] args) {
+		
+		int s;
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("sıcaklık değeri giriniz");
+		s = scan.nextInt();
+		
+		if(s < 5) {
+		 System.out.println("kayak");
+		} 
+		if(s >= 5 && s < 15) {
+			 System.out.println("sinema");
+			} 
+		if(s >= 15 && s < 25) {
+			 System.out.println("piknik");
+			} 
+		if(s >= 25) {
+			 System.out.println("yüzme");
+			} 
+		
+	}}
