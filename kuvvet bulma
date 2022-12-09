@@ -1,0 +1,23 @@
+import java.util.*;
+
+public class kod {
+	public static void main(String[] args) {
+		
+		int sayı; 
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("sayı giriniz");
+		sayı = scan.nextInt();
+		int i;
+		System.out.println("4'ün kuvvetleri");
+		for( i =1; i <= sayı; i *=4) {
+			
+			System.out.println(i);
+		}
+		
+		System.out.println("5'in kuvvetleri");
+		for(int j =1; j< sayı; j *=5) {
+			
+			System.out.println(j);}
+		
+	}}
