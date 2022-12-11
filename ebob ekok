@@ -1,0 +1,36 @@
+import java.util.*;
+
+public class kod {
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+        int ekok = 0;
+        int ebob = 0;
+        int max;
+        
+        System.out.print("1. Sayıyı giriniz: ");
+        int sayi1 = scan.nextInt();
+        System.out.print("2. Sayıyı giriniz: ");
+        int sayi2 = scan.nextInt();
+        max = sayi1 * sayi2;
+       
+        int i = max;
+        while( i > 0 )
+        {
+            if(i % sayi1 == 0 && i % sayi2 == 0) {
+                ekok = i;
+            }
+            i--;
+        }
+        
+        System.out.println("Ekok = " + ekok);
+        for(int i1 = 1; i1 < sayi1; i1++)
+        {
+            if(sayi1 % i1 == 0 && sayi2 % i1 == 0) {
+                ebob = i1;
+            }
+        }
+        System.out.println("Ebob = " + ebob);
+	    
+	    }
+	}
