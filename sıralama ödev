@@ -1,0 +1,33 @@
+
+import java.util.*;
+
+public class kod {
+	public static void main(String[] args) {
+		int sayı = 0;
+		int n;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("kaç tane sayı girceeksiniz");
+        sayı = scan.nextInt();
+
+        	double[] arr = new double[sayı];
+        	java.util.Scanner input = new java.util.Scanner(System.in);
+        	System.out.print("Enter " + arr.length + " values: ");
+        	for (int i = 0; i < arr.length; i++) {
+        	arr[i] = scan.nextInt();
+        }
+        insertionSort(arr);
+        System.out.println("en küçük sayı: " + arr[0] + "\nen büyük sayı:  " + arr[sayı-1]);
+    }
+	
+	public static void insertionSort(double[] list) {
+		 for (int i = 1; i < list.length; i++) {
+		 
+		 double currentElement = list[i];
+		 int k;
+		for(k = i-1; k >= 0 && list[k] > currentElement; k--) {
+		 list[k + 1] = list[k];
+		 }
+		list[k+1] = currentElement;
+		 }
+		
+}}
