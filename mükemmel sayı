@@ -1,0 +1,20 @@
+import java.util.*;
+
+public class kod {
+	public static void main(String[] args) {
+		int sayı;
+		int çarpan = 0;
+		
+        Scanner scan = new Scanner(System.in);
+        System.out.println("sayı giriniz");
+        sayı = scan.nextInt();
+
+        for(int i = 1; i < sayı;i++) {
+        	if(sayı % i == 0) {
+            	çarpan = çarpan + i;
+            }	
+        }
+        if(sayı == çarpan) {
+        	System.out.println(sayı +" mükemmel sayıdır");
+        }	else  {System.out.println(sayı + " mükemmel sayı değildir");}
+}}
