@@ -1,0 +1,16 @@
+		
+		int res = 0, number;
+
+        Scanner scan = new Scanner(System.in);
+        
+        System.out.print("Sayıyı Giriniz: "); 
+        number = scan.nextInt();
+        
+        while(number != 0 ){
+            res += number % 10;
+            number = number / 10;
+        }
+        
+        System.out.print("Sonuç : " + res);
+    }
+}
