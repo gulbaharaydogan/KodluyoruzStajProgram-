@@ -1,0 +1,23 @@
+import java.util.*;
+
+public class kod {
+	public static void main(String[] args) {
+		
+		int n, r; 
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("n^r olacak şekilde n sayısını giriniz");
+		n = scan.nextInt();
+		
+		System.out.println("n^r olacak şekilde r sayısını giriniz");
+		r = scan.nextInt();
+		int totaln = 1;
+	
+		for(int i =1; i <= r; i++) {
+			totaln = totaln * n;
+		}
+		System.out.println("n^r ifadesinin sonucu: "+totaln);
+		
+		
+		
+	}}
