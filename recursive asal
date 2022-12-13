@@ -1,0 +1,27 @@
+import java.util.*;
+
+public class kodluyoruz{
+
+    public static void main(String[] args) {
+    	
+        Scanner scan = new Scanner(System.in);
+        int sayı;
+        System.out.println("sayı giriniz");
+        sayı = scan.nextInt();
+        System.out.print("girdiğiniz sayı: " + sayı+ " ");
+        asal(sayı, 2);
+        
+    }
+    
+    
+    public static void asal(int a, int b) {
+    	if (b < a && a % b == 0)
+			System.out.println("asal değil");
+		else if (b < a) {
+			asal(a, b + 1);
+
+		} else
+			System.out.println("asal");;
+    		
+    }
+}
