@@ -1,0 +1,30 @@
+
+import java.util.*;
+
+public class kod {
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+        int taban, us;
+        System.out.println("taban sayıyı giriniz");
+        taban = scan.nextInt();
+        System.out.println("üs sayıyı giriniz");
+        us = scan.nextInt();
+        
+        System.out.println(üs(taban, us));
+        
+	    
+	    }
+	
+	public static int üs(int taban, int üs) {
+		
+		if (üs == 0) {
+            return 1;
+        } 
+		else {
+            return taban * üs(taban, üs - 1);
+            }
+		
+	}
+	
+}
