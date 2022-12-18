@@ -1,0 +1,30 @@
+
+import java.util.*;
+
+public class kod {
+	public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Lütfen bir sayı giriniz : ");
+        int number = scan.nextInt();
+        azaltma(number,number);
+    }
+
+    static void azaltma (int a,int b){
+    	
+        if ( a > 0){
+            System.out.print(a + " ");
+            a -= 5;
+            azaltma(a,b);
+        }else {
+            arttırma(a,b);
+        }
+    }
+    static void arttırma(int a,int b){
+    	
+        if ( a <= b){
+            System.out.print(a + " ");
+            a += 5;
+            arttırma(a,b);
+        }
+    }
+}
