@@ -1,0 +1,12 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        int[] list = {56, 34, 1, 8, 101, -2, -33};
+        
+      Arrays.sort(list); 
+      
+        System.out.println("Minimum Değer " + list[0]);
+        System.out.println("Maximum Değer " + list[list.length-1]);
+
+    }
+}
